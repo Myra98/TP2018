@@ -131,6 +131,18 @@ void MyOnPaint(HDC hdc)
 		Point first2(cos(Angle1*pi / 18) * Lenght1, sin(Angle1*pi / 18) * Lenght1); //same as second1
 		Point second2(cos((Angle1 + Angle2)*pi / 18) * Lenght2, sin((Angle1 + Angle2)*pi / 18) * Lenght2);
 		graphics.DrawLine(&pen, 400 + first2.X, 400 - first2.Y, 400 + first2.X + second2.X, 400 - first2.Y - second2.Y);
+		Point Box1(220, 380);
+		graphics.DrawRectangle(&pen2, Box1.X, Box1.Y, 20, 20);
+		Point Box2(290, 380);
+		graphics.DrawRectangle(&pen2, Box2.X, Box2.Y, 20, 20);
+		Point Box3(340, 380);
+		graphics.DrawRectangle(&pen2, Box3.X, Box3.Y, 20, 20);
+		Point Box4(490, 380);
+		graphics.DrawRectangle(&pen2, Box4.X, Box4.Y, 20, 20);
+		Point Box5(560, 380);
+		graphics.DrawRectangle(&pen2, Box5.X, Box5.Y, 20, 20);
+		Point Box6(600, 380);
+		graphics.DrawRectangle(&pen2, Box6.X, Box6.Y, 20, 20);
 	}
 }
 void repaintWindow(HWND hWnd, HDC &hdc, PAINTSTRUCT &ps, RECT *drawArea)
